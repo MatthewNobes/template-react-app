@@ -6,12 +6,12 @@ export const NavList = () => {
       <ul className="React-Router-Group">
         <li className="React-Router-Headlinks">
           <Link className="React-Router-Links" to="/">
-            Home
+            Feature One
           </Link>
         </li>
         <li className="React-Router-Headlinks">
-          <Link className="React-Router-Links" to="/PageOne">
-            Page 1
+          <Link className="React-Router-Links" to="/FeatureTwo">
+            Feature Two
           </Link>
         </li>
       </ul>

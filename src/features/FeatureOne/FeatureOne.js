@@ -1,10 +1,10 @@
 import "../../css/App.css";
 import React from "react";
 
-export const PageOne = () => {
+export const FeatureOne = () => {
   return (
     <div>
-      <h1>Insert Title</h1>
+      <h1>Insert Title - Feature One</h1>
       <p>Insert content here</p>
     </div>
   );

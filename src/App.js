@@ -4,8 +4,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./Components/Header";
 import NavList from "./Components/NavList";
 
-import { Home } from "./Components/main-pages/Home";
-import { PageOne } from "./Components/main-pages/PageOne";
+import { FeatureOne } from "./features/FeatureOne/FeatureOne";
+import { FeatureTwo } from "./features/FeatureTwo/FeatureTwo";
 
 const App = () => (
   <BrowserRouter>
@@ -15,8 +15,8 @@ const App = () => (
       </header>
       <NavList />
       <Routes>
-        <Route path="/PageOne" element={<PageOne />} />
-        <Route path="/" element={<Home />} />
+        <Route path="/FeatureTwo" element={<FeatureTwo />} />
+        <Route path="/" element={<FeatureOne />} />
       </Routes>
     </div>
   </BrowserRouter>
