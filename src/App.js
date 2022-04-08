@@ -3,10 +3,10 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Header from "./Components/Header/Header";
 
-import Home from "./Components/main-pages/Home";
-import PageOne from "./Components/main-pages/PageOne";
+import { Home } from "./Components/main-pages/Home";
+import { PageOne } from "./Components/main-pages/PageOne";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <header className="App-header">
@@ -37,6 +37,6 @@ function App() {
       </nav>
     </div>
   );
-}
+};
 
 export default App;
