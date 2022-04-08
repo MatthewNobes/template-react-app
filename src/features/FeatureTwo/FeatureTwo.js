@@ -1,4 +1,4 @@
-import "../../css/App.css";
+import "../../style/App.css";
 import React from "react";
 
 export const FeatureTwo = () => {
