@@ -4,8 +4,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./Components/Header";
 import NavList from "./Components/NavList";
 
-import { FeatureOne } from "./features/FeatureOne/FeatureOne";
-import { FeatureTwo } from "./features/FeatureTwo/FeatureTwo";
+import FeatureOne from "./features/FeatureOne";
+import FeatureTwo from "./features/FeatureTwo";
 
 const App = () => (
   <BrowserRouter>
