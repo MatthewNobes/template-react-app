@@ -1,11 +1,5 @@
-import React from 'react';
+import React from "react";
 
-function Header() {
-  return (
-    <div>
-        <h1>Insert Header Here</h1>
-    </div>
-  );
-}
-
-export default Header;
+export const Header = () => {
+  return <h1>Insert Header Here</h1>;
+};
