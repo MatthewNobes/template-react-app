@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export const NavList = () => {
+export const Navigation = () => {
   return (
     <nav>
       <ul className="React-Router-Group">
