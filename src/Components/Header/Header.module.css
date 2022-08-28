@@ -1,4 +1,6 @@
 .Header {
+  padding: 0;
+  margin: 0;
   background-color: #282c34;
   min-height: 10vh;
   display: flex;
