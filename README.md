@@ -1,6 +1,6 @@
-# Getting Started with Template React App
+# Template React App
 
-This project was designed as a simple starting point for React web Applications. This has been set up with an MIT licence, so feel free to use it to avoid all the starting setup with React Apps. 
+This project was designed as a simple starting point for React web Applications. This has been set up with an MIT license, so feel free to use it to avoid all the starting setup with React Apps.
 
 ## Available Scripts
 
@@ -29,9 +29,9 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Installed Packages 
+## Installed Packages
 
-This template comes with a few key React libraries and tools installed out of the gate. A full list of these packages can be found in the package.json file. Here is a list of a few of the major ones. 
+This template comes with a few key React libraries and tools installed out of the gate. A full list of these packages can be found in the package.json file. Here is a list of a few of the major ones.
 
-* React 
-* React-Router 
+- React
+- React-Router
