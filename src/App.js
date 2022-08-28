@@ -10,7 +10,7 @@ import FeatureTwo from "./features/FeatureTwo";
 const App = () => (
   <div className="App">
     <header className="App-header">
-      <Header />
+      <Header headerText={"Insert Header Here"} />
     </header>
     <Navigation />
     <Routes>
