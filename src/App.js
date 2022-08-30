@@ -6,9 +6,7 @@ import { RoutesBlock } from "./features/RoutingBlock";
 
 const App = () => (
   <div className="App">
-    <header>
-      <Header headerText={"Insert Header Here"} />
-    </header>
+    <Header headerText={"Insert Header Here"} />
     <Navigation />
     <RoutesBlock />
   </div>
