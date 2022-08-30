@@ -1,18 +1,8 @@
 import "./style/App.css";
 import React from "react";
-import { Routes, Route } from "react-router-dom";
 import Header from "./Components/Header";
 import Navigation from "./Components/Navigation";
-
-import FeatureOne from "./features/FeatureOne";
-import FeatureTwo from "./features/FeatureTwo";
-
-const RoutesBlock = () => (
-  <Routes>
-    <Route path="/FeatureTwo" element={<FeatureTwo />} />
-    <Route path="/" element={<FeatureOne />} />
-  </Routes>
-);
+import { RoutesBlock } from "./features/RoutingBlock";
 
 const App = () => (
   <div className="App">
