@@ -1,6 +1,8 @@
 import { Routes, Route } from "react-router-dom";
-import FeatureOne from "./features/FeatureOne";
-import FeatureTwo from "./features/FeatureTwo";
+
+/** Page imports go here */
+import FeatureOne from "./FeatureOne";
+import FeatureTwo from "./FeatureTwo";
 
 export const RoutesBlock = () => (
   <Routes>
