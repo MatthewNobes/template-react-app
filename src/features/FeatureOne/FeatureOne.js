@@ -1,8 +1,13 @@
+import { Box, Typography } from "@mui/material";
+import PageHeading from "../../Components/PageHeading";
+
 export const FeatureOne = () => {
   return (
-    <div className="Content">
-      <h1>Insert Title - Feature One</h1>
-      <p>Insert content here</p>
-    </div>
+    <Box>
+      <PageHeading pageHeading="Insert Title - Feature One" />
+      <Typography variant="body1" paragraph>
+        Insert content here
+      </Typography>
+    </Box>
   );
 };
