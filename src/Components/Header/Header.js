@@ -13,7 +13,12 @@ export const Header = (props) => {
 
   return (
     <header onClick={() => returnHome()}>
-      <Typography component="span" variant="h2" className={css.Header}>
+      <Typography
+        component="span"
+        variant="h2"
+        className={css.Header}
+        align="center"
+      >
         {props.headerText}
       </Typography>
     </header>
