@@ -1,23 +1,27 @@
-import { Link } from "react-router-dom";
 import css from "./Navigation.module.css";
+import NavOption from "./NavOption";
+import PropTypes from "prop-types";
 
-export const Navigation = () => {
+export const Navigation = (props) => {
+	const navItems = props.routes;
+
 	return (
-		<nav className={css.ReactRouterGroup}>
-			<Link
-				className={css.ReactRouterLinks}
-				to="/"
-				aria-label="Feature One Link"
-			>
-        Feature One
-			</Link>
-			<Link
-				className={css.ReactRouterLinks}
-				to="/FeatureTwo"
-				aria-label="Feature Two Link"
-			>
-        Feature Two
-			</Link>
+		<nav className={css.ReactRouterGroup} data-testid="nav">
+			{navItems.map((item) => {
+				return (
+					<NavOption
+						key={item.id}
+						id={item.id}
+						label={item.label}
+						route={item.route}
+						ariaLabel={item.ariaLabel}
+					/>
+				);
+			})}
 		</nav>
 	);
+};
+
+Navigation.propTypes = {
+	routes: PropTypes.array.isRequired,
 };
