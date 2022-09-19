@@ -1,4 +1,3 @@
-import css from "./Header.module.css";
 import { useNavigate } from "react-router-dom";
 import { useCallback } from "react";
 import { Typography } from "@mui/material";
@@ -14,12 +13,7 @@ export const Header = (props) => {
 
 	return (
 		<header onClick={() => returnHome()}>
-			<Typography
-				component="span"
-				variant="h2"
-				className={css.Header}
-				align="center"
-			>
+			<Typography variant="h6" noWrap sx={{ flexGrow: 1 }} component="div">
 				{props.headerText}
 			</Typography>
 		</header>
