@@ -1,4 +1,6 @@
 import { Navigation } from "./Navigation";
+import { render } from "@testing-library/react";
+import { BrowserRouter } from "react-router-dom";
 
 describe("Navigation testing", () => {
 	it("should render the 2 navigation routes passed in", () => {
@@ -17,8 +19,12 @@ describe("Navigation testing", () => {
 			},
 		];
 
-		const navBar = Navigation({ routes: routes });
+		const navBar = render(
+			<BrowserRouter>
+				<Navigation routes={routes} />
+			</BrowserRouter>,
+		);
 
-		expect(navBar.props.children.length).toBe(2);
+		expect(navBar).toBeDefined();
 	});
 });

@@ -4,11 +4,6 @@ import {
 	Box,
 	Drawer,
 	Toolbar,
-	List,
-	ListItem,
-	ListItemButton,
-	ListItemIcon,
-	ListItemText,
 	Divider,
 	IconButton,
 	CssBaseline,
@@ -18,13 +13,27 @@ import MuiAppBar from "@mui/material/AppBar";
 import MenuIcon from "@mui/icons-material/Menu";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
 
 import Header from "../Header";
+import Navigation from "../Navigation";
 import { RoutesBlock } from "../../features/RoutingBlock";
 
 const drawerWidth = 240;
+
+const routes = [
+	{
+		id: 0,
+		label: "Feature One",
+		route: "/",
+		ariaLabel: "Feature One Link",
+	},
+	{
+		id: 1,
+		label: "Feature Two",
+		route: "/FeatureTwo",
+		ariaLabel: "Feature Two Link",
+	},
+];
 
 const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })(
 	({ theme, open }) => ({
@@ -126,31 +135,9 @@ export const HeaderBar = () => {
 					</IconButton>
 				</DrawerHeader>
 				<Divider />
-				<List>
-					{["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
-						<ListItem key={text} disablePadding>
-							<ListItemButton>
-								<ListItemIcon>
-									{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-								</ListItemIcon>
-								<ListItemText primary={text} />
-							</ListItemButton>
-						</ListItem>
-					))}
-				</List>
+				<Navigation routes={routes} />
 				<Divider />
-				<List>
-					{["All mail", "Trash", "Spam"].map((text, index) => (
-						<ListItem key={text} disablePadding>
-							<ListItemButton>
-								<ListItemIcon>
-									{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-								</ListItemIcon>
-								<ListItemText primary={text} />
-							</ListItemButton>
-						</ListItem>
-					))}
-				</List>
+				<Navigation routes={routes} />
 			</Drawer>
 		</Box>
 	);
