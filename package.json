@@ -20,7 +20,8 @@
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
-		"lint": "eslint --fix --ext .js,.jsx ."
+		"lint": "eslint --fix --ext .js,.jsx .",
+		"prettier": "prettier --check ."
 	},
 	"eslintConfig": {
 		"extends": [
@@ -46,6 +47,7 @@
 		"@testing-library/user-event": "^14.0.4",
 		"eslint": "^8.23.1",
 		"eslint-plugin-react": "^7.31.8",
-		"nth-check": "^2.1.1"
+		"nth-check": "^2.1.1",
+		"prettier": "^2.7.1"
 	}
 }
