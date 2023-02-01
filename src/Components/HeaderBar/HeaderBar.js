@@ -1,4 +1,3 @@
-/* eslint-disable quote-props */
 import { useState } from "react";
 import {
 	Box,
@@ -116,7 +115,7 @@ export const HeaderBar = () => {
 			</Main>
 			<Drawer
 				sx={{
-					flexShrink: 0,
+					"flexShrink": 0,
 					"& .MuiDrawer-paper": {
 						width: drawerWidth,
 					},
