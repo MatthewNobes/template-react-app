@@ -6,7 +6,7 @@ export const FeatureTwo = () => {
 		<Box mx={2}>
 			<PageHeading pageHeading="Insert Title - Feature Two" />
 			<Typography variant="body1" paragraph>
-        Insert content here
+				Insert content here
 			</Typography>
 		</Box>
 	);
